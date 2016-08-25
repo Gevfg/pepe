@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AS AVENTURAS DO PEPÊ | HISTÓRINHAS</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/stilo.css">
+		<link rel="stylesheet" href="css/topnav.css">
+		<link rel="icon" type="image/png" href="imagens/logo/favicon.png">
+	</head>
+	<body class="index">
+		<header id="navbar" >
+            <div class="container">
+				<img class="logo" src="imagens/logo/logo.png">
+				<nav class="topnav">
+					<ul>
+						<li><a class="home" href="index.html">Home</a></li>
+						<li><a class="jogos" href="#">Jogos</a></li>
+						<li><a class="hist" href="historias/historias.html">Historias</a></li>
+						<li><a class="color" href="colorir/colorir.html">Colorir</a></li>
+						<li><a class="contato" href="#">Contato</a></li>
+						<li><a class="sobre" href="#">Sobre</a></li>
+						<li class="icone">
+							<a class="icon" href="javascript:void(0);" onclick="responsive()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+        </header>
+		
+		<div class="chamada">
+			<img class="img-chamada" src="imagens/Chamada2.png">
+			<a class="robo" onclick="tocar('audio-robo')"><img class="robo-anima" src="imagens/Robozinho.png"></a>
+		</div>
+		
+		<audio id="audio-robo">
+    		<source src="audio/robo2.mp3" type="audio/mp3">
+		</audio>
+		<audio id="audio-urso">
+    		<source src="audio/brinquedo.mp3" type="audio/mp3">
+		</audio>
+		<audio id="audio-violao">
+    		<source src="audio/violao.mp3" type="audio/mp3">
+		</audio>
+		<audio id="audio-heli" loop>
+    		<source src="audio/heli.mp3" type="audio/mp3">
+		</audio>
+		
+		<main>
+			
+			<div onclick="tocar('audio-violao')" class="violao"></div>
+			<div id="helicoptero" onclick="voar('audio-heli')" class="helicoptero">
+				<img id="elice" class="elice" src="imagens/elice.png">
+				<img id="elicecima" class="elicecima" src="imagens/elicecima.png">
+			</div>
+			<img class="pulero" src="imagens/pulero.png">
+			
+			<div class="container">
+				<div class="estante">
+					<a href="historias/historias.html"><img src="imagens/capas/livrosalada.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livrodormindo.png"></a>
+					<a href="historias/historias.html"><img src="imagens/Robozinho.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livronomedico.png"></a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="estante">
+					<a onclick="tocar('audio-urso')"><img src="imagens/UrsinhoAzul.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livroeducacao.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livrochocolate.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livrofazendo.png"></a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="estante">
+					<a href="historias/historias.html"><img src="imagens/capas/livroauladeciencia.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livrohoradolanche.png"></a>
+					<a href="historias/historias.html"><img src="imagens/capas/livroagua.png"></a>
+					<a href="historias/historias.html"><img src="imagens/CarrinhoLaranja.png"></a>
+				</div>
+			</div>
+		
+		</main>
+		<footer>
+		</footer>
+		<script language="JavaScript" src="js/nav.js"></script>
+		<script>
+			function tocar(nome) {
+				audio = document.getElementById(nome);
+				audio.play();
+			}
+			var cont = 0;
+			
+			function voar(nome) {
+				if (cont == 0){
+					a(nome);
+					cont +=1;
+				}else if(cont == 1) {
+					b(nome);
+					cont +=1;
+				}else {
+					c(nome);
+					cont = 0;
+				}
+				function a(nome){														 
+					document.getElementById("elice").className = "elice girar";
+					document.getElementById("elicecima").className = "elicecima girocima1";
+					audio = document.getElementById(nome);
+					audio.play();
+				}
+				function b(nome){														 
+					document.getElementById("helicoptero").className = "helicoptero voar";
+					document.getElementById("elicecima").className = "elicecima girocima2";
+				}
+				function c(nome){
+					document.getElementById("helicoptero").className = "helicoptero";
+					document.getElementById("elice").className = "elice";
+					document.getElementById("elicecima").className = "elicecima";
+					audio = document.getElementById(nome);
+					audio.pause();
+				}
+			}
+			
+		</script>
+	</body>
+</html>

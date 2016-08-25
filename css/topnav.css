@@ -1,0 +1,214 @@
+/******** BARRA FIXA ********/
+
+header {
+    background-color: rgba(255, 255, 255,0);
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+	font-family: 'Nunito', sans-serif;
+	z-index: 99999;	
+}
+
+header .container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.topnav li {
+    display: inline-block;
+    float: left;
+}
+.topnav ul {
+  float: right;
+}
+.logo {
+	float: left;
+	margin-top: 5px;
+}
+.topnav a {
+    line-height:70px;
+    display: block;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+	font-size: 1em;
+	font-weight: 400;
+	background-color: #fff;
+    border-radius: 0px 0px 30px 30px;
+	margin-right: 5px;
+	transition: 0.5s;
+
+}
+.topnav a:hover{
+    padding-top: 20px;
+	border-radius: 0px 0px 30px 30px;
+    color: transparent;
+	transition: padding 0.5s;
+}
+.topnav li.icone {
+    display: none;
+}
+.topnav a::before {
+    content: "";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-family: 'FontAwesome';
+    font-size: 3em;
+    text-rendering: auto;
+	display: none;
+	color: #fff;
+}
+
+.topnav a:hover::before {
+    display: block;
+    transition: all 0.5s;
+}
+
+a.home:hover {
+	background-color: #fc5f2f;
+}
+a.jogos:hover {
+	background-color: #1f729f;
+}
+a.hist:hover {
+	background-color: #469558;
+}
+a.color:hover {
+	background-color: #e0c530;
+}
+a.contato:hover {
+	background-color: #974bb9;
+}
+a.sobre:hover{
+	background-color: #f2a337;
+}
+
+
+a.home {
+	background-color: #fc5f2f;
+}
+a.jogos {
+	background-color: #1f729f;
+}
+a.hist {
+	background-color: #469558;
+}
+a.color {
+	background-color: #e0c530;
+}
+a.contato {
+	background-color: #974bb9;
+}
+a.sobre{
+	background-color: #f2a337;
+}
+a.home:hover::before, a.home::before {
+   	content: "\f015";
+}
+
+a.jogos:hover::before, a.jogos::before  {
+   	content: "\f11b";
+
+}
+
+a.hist:hover::before, a.hist::before {
+   content: "\f1ea";
+  
+}
+
+a.color:hover::before, a.color::before {
+   content: "\f1fc";
+
+}
+
+a.contato:hover::before, a.contato::before {
+   content: "\f098";
+  
+}
+
+a.sobre:hover::before, a.sobre::before {
+   content: "\f05a";
+ 
+}
+
+
+
+
+@media screen and (max-width: 850px){
+	.container {
+		width: 100%;	
+	}
+	.logo {
+		margin-left: 5px;
+	}
+	.topnav a {
+		font-size: 1em;
+	}
+	.topnav li.icone {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        font-size: 1.9em;
+        text-align: center;
+        box-sizing: border-box;
+		
+    }
+	.topnav li a.icon {
+        width: 46px;
+        height: 46px;
+     	border: 0;
+		line-height: 1.6em;
+		color: #ff9300;
+		border-radius: 10px;
+    }
+    .topnav li a.icon:hover {
+        background-color: #ff9300; 
+        border-radius: 10px 10px 10px 10px;
+        color: #ffffff;  
+        padding: 0px;
+    }
+	
+    .topnav li {
+        display: none;
+    }
+    .topnav.responsive li {
+        float: none;
+        display: block;
+    }
+	
+    .topnav.responsive ul {
+        clear: both;
+        float: none;
+		
+ 
+    }
+    .topnav.responsive a.icon {
+        text-align: center;
+        padding: 0px;
+		line-height: 1.6em;
+		
+	}
+	
+    .topnav.responsive a {
+        text-align: left;
+        padding-left: 10px;
+        width: 100%;
+        border-radius: 0px;
+        border-top: 2px solid #e3e3e3;
+    }
+    .topnav.responsive a:hover{
+        padding-top: 0px;
+        border-radius: 0px;
+		background-color: #fff;
+    }
+
+    .topnav.responsive a::before {
+        display: inline-block;
+        font-size: 1.5em;
+		margin-right: 10px;
+    }  
+}

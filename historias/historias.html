@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AS AVENTURAS DO PEPÊ | HISTORIAS</title>
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/stilo.css">
+		<link rel="stylesheet" href="../css/topnav.css">
+		<link rel="stylesheet" href="../css/historiasindex.css">
+		<link rel="icon" type="image/png" href="../imagens/logo/favicon.png">
+	</head>
+	<body>
+		<header id="navbar" >
+            <div class="container">
+				<img class="logo" src="../imagens/logo/logo.png">
+				<nav class="topnav">
+					<ul>
+						<li><a class="home" href="../index.html">Home</a></li>
+						<li><a class="jogos" href="#">Jogos</a></li>
+						<li><a class="hist" href="../historias/historias.html">Historias</a></li>
+						<li><a class="color" href="../colorir/colorir.html">Colorir</a></li>
+						<li><a class="contato" href="#">Contato</a></li>
+						<li><a class="sobre" href="#">Sobre</a></li>
+						<li class="icone">
+							<a class="icon" href="javascript:void(0);" onclick="responsive()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+        </header>
+		
+		<div class="container-historias">
+		
+			<div id="salada"  class="tablet">
+				<video autoplay loop>
+					<source src="videos/salada.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="dormindo" class="none">
+				<video loop>
+					<source src="videos/dormindo.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>	
+
+			<div id="medico" class="none">
+				<video loop>
+					<source src="videos/medico.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="educacao" class="none">
+				<video loop>
+					<source src="videos/educacao.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="chocolate" class="none">
+				<video loop>
+					<source src="videos/chocolate.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="fazendo" class="none">
+				<video loop>
+					<source src="videos/fazendo.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="aula" class="none">
+				<video loop>
+					<source src="videos/aula.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="lanche" class="none">
+				<video loop>
+					<source src="videos/lanche.mp4" type="video/mp4">
+					Seu navegador não suporta o elemento <code>video</code>
+				</video>
+				<ul class="menu-video">
+					<li><a class="but" href="revistas/salada/salada.html">Assistir <i class="fa fa-play-circle" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="lista">
+				<h2>Minha Lista de Histórias</h2>
+				<ul>
+					<li><a onclick="troca('salada')"><p>1. Salada</p><img src="gif/Salada001.gif"> </a></li>
+					<li><a onclick="troca('dormindo')"><p>2. Dormindo na Aula</p><img src="gif/dormindo.gif"> </a></li>
+					<li><a onclick="troca('medico')"><p>3. No Médico</p><img src="gif/medico.gif"> </a></li>
+					<li><a onclick="troca('educacao')"><p>4. Educação Física</p><img src="gif/educacao.gif"> </a></li>
+					<li><a onclick="troca('chocolate')"><p>5. Chocolate</p><img src="gif/chocolate.gif"> </a></li>
+					<li><a onclick="troca('fazendo')"><p>6. Fazendo o que é Certo</p><img src="gif/fazendo.gif"> </a></li>
+					<li><a onclick="troca('aula')"><p>7. Aula de Ciências</p><img src="gif/aula.gif"> </a></li>
+					<li><a onclick="troca('lanche')"><p>8. Hora do Lanche</p><img src="gif/lanche.gif"> </a></li>
+				</ul>
+			</div>		
+		</div>
+		
+		<script language="JavaScript" src="../js/nav.js"></script>
+		
+		<script>
+			
+		function troca(nome) {
+			video = document.getElementsByClassName("tablet")[0].getElementsByTagName("video")[0];
+			video.currentTime = 0;
+			video.pause();
+			
+			document.getElementsByClassName("tablet")[0].className = "none";
+			document.getElementById(nome).className = "tablet"; 
+			
+			video = document.getElementsByClassName("tablet")[0].getElementsByTagName("video")[0];
+			video.play();
+			fixar();
+		}
+			
+		
+		
+		//Fixar tablet no topo
+		function fixar(){
+			var top = window.pageYOffset || document.documentElement.scrollTop;
+			if( top > 100 ) {
+				var tablet = document.getElementsByClassName('tablet')[0].className = 'tablet fixo';
+		 	}else {
+			 	var tablet = document.getElementsByClassName('tablet')[0].className = "tablet";
+		 	}
+		}
+		
+		window.onscroll = function(){
+			fixar();
+		}
+		
+		</script>
+		
+	</body>
+</html>
