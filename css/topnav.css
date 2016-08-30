@@ -99,6 +99,11 @@ a.hist {
 a.color {
 	background-color: #e0c530;
 }
+a.perso {
+	background-color: #816942;
+	width: 140px;
+}
+
 a.contato {
 	background-color: #974bb9;
 }
@@ -121,6 +126,11 @@ a.hist:hover::before, a.hist::before {
 
 a.color:hover::before, a.color::before {
    content: "\f1fc";
+
+}
+
+a.perso:hover::before, a.color::before {
+   content: "\f0c0";
 
 }
 
